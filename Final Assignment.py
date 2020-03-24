@@ -113,7 +113,8 @@ df.head()
 # Type your code here
 csv_path='https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/projects/coursera_project/clean_unemployment.csv'
 df=pd.read_csv(csv_path)
-df['unemployment']>8.5
+df1=df[df['unemployment']>8.5]
+df1
 
 
 # <h3 id="Section_4">Question 4: Use the function make_dashboard to make a dashboard</h3>
